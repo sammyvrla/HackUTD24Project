@@ -1,7 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Bank Service</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <div class="container">
+      <h1>Basic Bank Service</h1>
+      <div class="balance">
+        <h2>Account Balance: $<span id="balance">0</span></h2>
+      </div>
+      <div class="transactions">
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <button id="depositBtn">Deposit</button>
+        <button id="withdrawBtn">Withdraw</button>
+      </div>
+      <div id="message" class="message"></div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
