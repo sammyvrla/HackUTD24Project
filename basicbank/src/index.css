@@ -2,386 +2,219 @@
 
 /* Container */
 .banking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the top */
   width: 100%;
   height: 100%;
-  position: relative;
   background: #3D0316;
+  padding: 20px; /* Add some padding */
 }
 
 /* Gradient Box */
 .gradient-box {
   width: 726px;
   height: 355px;
-  left: 354px;
-  top: 3108px;
-  position: absolute;
   background: linear-gradient(98deg, #EF9033 3%, #3483C1 100%);
   border-radius: 20px;
+  margin: 20px 0; /* Add margin for spacing */
 }
 
 /* Images */
 .image-placeholder {
-  position: absolute;
+  width: 427px; /* Set a fixed width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px; /* Add margin for spacing */
 }
 
-.image-placeholder:nth-of-type(1) {
-  width: 427px;
-  height: 430px;
-  left: 206px;
-  top: 1827px;
-}
-
-.image-placeholder:nth-of-type(2) {
-  width: 396px;
-  height: 411px;
-  left: 797px;
-  top: 1416px;
-}
-
-.image-placeholder:nth-of-type(3) {
-  width: 413px;
-  height: 420px;
-  left: 807px;
-  top: 117px;
-}
-
+/* Title Container */
 .title-container {
-  width: 769px;
-  height: 158px;
-  left: 187px;
-  top: 219px;
-  position: absolute;
+  text-align: center; /* Center the title text */
+  margin-top: 20px; /* Add some margin */
 }
 
-.title, .title-separator, .title-unlimited {
+.title,
+.title-unlimited {
   color: white;
   font-size: 100px;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
   line-height: 100px;
-  word-wrap: break-word;
-}
-
-.title-separator {
-  color: #9E9E9E;
 }
 
 .title-unlimited {
   color: #A59393;
 }
 
-.subtitle, .overview, .how-it-helps, .our-vision, .call-to-action, .are-you-ready, .read-testimonials, .testimonials {
-  position: absolute;
-  color: white;
-  font-family: 'Outfit', sans-serif;
-  word-wrap: break-word;
-}
-
+/* Subtitle */
 .subtitle {
   font-size: 35px;
-  top: 443px;
+  color: white;
+  margin-top: 20px; /* Add margin for spacing */
+  text-align: center; /* Center the subtitle */
 }
 
+/* Overview Section */
 .overview {
   font-size: 65px;
-  top: 1036px;
+  color: white;
+  margin: 40px 0; /* Add margin for spacing */
 }
 
+/* Overview Details */
 .overview-details {
-  position: absolute;
-  left: 797px;
-  top: 1110px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
 }
 
 .overview-item {
   color: white;
   font-size: 17px;
-  font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0.51px;
-  word-wrap: break-word;
 }
 
 .overview-description {
   color: white;
   font-size: 17px;
-  font-family: 'Outfit', sans-serif;
   font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0.51px;
-  word-wrap: break-word;
+  margin-bottom: 20px; /* Add margin for spacing */
 }
+
+/* How It Helps, Our Vision, and Other Sections */
 .how-it-helps,
 .our-vision,
 .call-to-action,
 .are-you-ready,
 .read-testimonials,
 .testimonials {
-    color: white;
-    font-family: 'Outfit', sans-serif;
-    word-wrap: break-word;
-}
-
-.how-it-helps {
-    font-size: 65px;
-    top: 1506px;
-    left: 185px;
-}
-
-.our-vision {
-    font-size: 65px;
-    top: 1941px;
-    left: 791px;
-}
-
-.banking-basics {
-    color: #A59393;
-    font-size: 25px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 500;
-    line-height: 25px;
-    word-wrap: break-word;
-    position: absolute;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 65px;
+  margin: 40px 0; /* Add margin for spacing */
+  text-align: center; /* Center the text */
 }
 
 .call-to-action {
-    font-size: 65px;
-    top: 3185px;
-    left: 436px;
-    text-align: center;
+  font-size: 65px;
+  color: white;
 }
 
 .are-you-ready {
-    font-size: 25px;
-    top: 3142px;
-    left: 601px;
-    text-align: center;
-    color: black;
-}
-
-.read-testimonials {
-    font-size: 65px;
-    top: 2396px;
-    left: 446px;
-    text-align: center;
-}
-
-.testimonials {
-    font-size: 25px;
-    top: 2353px;
-    left: 611px;
-    text-align: center;
-    color: #A59393;
+  font-size: 25px;
+  color: black;
 }
 
 /* Buttons */
 .button-container {
-    position: absolute;
+  display: flex;
+  justify-content: center; /* Center buttons */
+  margin-top: 20px; /* Add some margin */
 }
 
 .button {
-    width: 299px;
-    height: 87px;
-    background: #3483C1;
-    border-radius: 50px;
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    line-height: 32px;
-    word-wrap: break-word;
-}
-
-.button-container:nth-of-type(1) {
-    left: 187px;
-    top: 604px;
-}
-
-.button-container:nth-of-type(2) {
-    left: 569px;
-    top: 3333px;
+  width: 299px;
+  height: 87px;
+  background: #3483C1;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 10px; /* Add space between buttons */
 }
 
 /* Navbar */
 .navbar {
-    position: absolute;
-    width: 1064px;
-    height: 98px;
-    left: 191px;
-    top: 822px;
-    background: rgba(114.74, 11, 43.85, 0.98);
-    border-radius: 20px;
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly */
+  width: 100%;
+  background: rgba(114.74, 11, 43.85, 0.98);
+  border-radius: 20px;
+  margin: 20px 0; /* Add margin for spacing */
 }
 
 .navbar-item {
-    color: white;
-    font-size: 25px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    line-height: 25px;
-    word-wrap: break-word;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 /* Footer */
 .footer {
-    position: absolute;
-    width: 1064px;
-    height: 200px;
-    left: 188px;
-    top: 3569px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center footer items */
+  margin-top: 40px; /* Add margin for spacing */
 }
 
 .footer-text {
-    color: white;
-    font-size: 25px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    line-height: 25px;
-    word-wrap: break-word;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 /* Vision Section */
 .vision {
-    color: white;
-    font-size: 20px;
-    font-family: 'Outfit', sans-serif;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0; /* Add margin for spacing */
 }
 
 .vision-highlight {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* Testimonials */
 .testimonial {
-    position: absolute;
-    color: white;
-    font-size: 25px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    line-height: 25px;
-    word-wrap: break-word;
-}
-
-.testimonial-name {
-    font-weight: 500;
-}
-
-/* See More Link */
-.see-more {
-    color: #931039;
-    font-size: 25px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    text-decoration: underline;
-    line-height: 25px;
-    word-wrap: break-word;
-    text-align: center;
-    position: absolute;
-    left: 586px;
-    top: 2978px;
-}
-
-/* Additional Styles */
-.introducing {
-    position: absolute;
-    left: 188px;
-    top: 52px;
-}
-
-.introducing-text {
-    color: #E1C3C7;
-    font-size: 64px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    line-height: 64px;
-    word-wrap: break-word;
-}
-.introducing-title {
-  color: #E1C3C7;
-  font-size: 64px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  line-height: 64px;
-  word-wrap: break-word;
-}
-
-/* Additional styles for the testimonial section */
-.testimonial {
-  position: absolute;
   color: white;
   font-size: 25px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 400;
-  line-height: 25px;
-  word-wrap: break-word;
+  margin: 20px 0; /* Add margin for spacing */
 }
 
 .testimonial-name {
   font-weight: 500;
 }
-
-.testimonial-text {
-  width: 1003px;
-  height: 49px;
-  position: absolute;
-  color: white;
+/* See More Link */
+.see-more {
+  color: #931039;
   font-size: 25px;
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
-  line-height: 25px;
-  word-wrap: break-word;
+  text-decoration: underline;
+  text-align: center;
+  margin: 20px 0; /* Add margin for spacing */
 }
 
-/* Positioning testimonial texts */
-.testimonial:nth-of-type(1) {
-  left: 224px;
-  top: 2791px;
+/* Additional Styles for Introducing Section */
+.introducing {
+  text-align: center; /* Center the introducing text */
+  margin: 20px 0; /* Add margin for spacing */
 }
 
-.testimonial:nth-of-type(2) {
-  left: 224px;
-  top: 2844px;
+.introducing-text,
+.introducing-title {
+  color: #E1C3C7;
+  font-size: 64px;
+  font-family: 'Outfit', sans-serif;
+  line-height: 64px;
 }
 
-/* Vision text positioning */
-.vision:nth-of-type(1) {
-  position: absolute;
-  left: 193px;
-  top: 1589px;
+.introducing-title {
+  font-weight: 700; /* Make the title bold */
 }
 
-.vision:nth-of-type(2) {
-  position: absolute;
-  left: 791px;
-  top: 2021px;
-}
-
-/* Final adjustments */
+/* Final Adjustments for Banking Basics Footer */
 .banking-basics-footer {
   color: #A59393;
   font-size: 25px;
   font-family: 'Outfit', sans-serif;
   font-weight: 500;
-  line-height: 25px;
-  word-wrap: break-word;
-  position: absolute;
+  margin: 20px 0; /* Add margin for spacing */
 }
 
-.banking-basics-footer:nth-of-type(1) {
-  top: 1014px;
-  left: 797px;
-}
-
-.banking-basics-footer:nth-of-type(2) {
-  top: 2353px;
-  left: 797px;
-}
-
-/* General styles */
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
