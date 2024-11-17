@@ -1,13 +1,55 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f4f8; /* Light background color */
+  font-family: Arial, sans-serif; /* Font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox to center the app */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  background-color: #ffffff; /* White background for the app */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding inside the container */
+  text-align: center; /* Center text */
+  width: 300px; /* Fixed width */
+}
+
+h1 {
+  color: #4CAF50; /* Green color for the title */
+}
+
+h2 {
+  color: #333; /* Darker color for the balance */
+}
+
+.amount-input {
+  width: 100%; /* Full width input */
+  padding: 10px; /* Padding inside input */
+  margin: 10px 0; /* Margin above and below input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.button-container {
+  display: flex; /* Use flexbox for buttons */
+  justify-content: space-between; /* Space between buttons */
+}
+
+.button {
+  background-color: #4CAF50; /* Green button color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor on hover */
+  flex: 1; /* Equal width for buttons */
+  margin: 0 5px; /* Margin between buttons */
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
 }
