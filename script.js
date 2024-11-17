@@ -24,6 +24,7 @@ document.getElementById('withdrawBtn').addEventListener('click', function() {
         showMessage('Please enter a valid amount to withdraw.');
     }
     clearInput();
+    
 });
 
 function updateBalance() {
