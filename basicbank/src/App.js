@@ -1,69 +1,100 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from 'react';
+import './App.css'; // Import the CSS file
 
 const App = () => {
-    const [balance, setBalance] = useState(0);
-    const [amount, setAmount] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleDeposit = () => {
-        const depositAmount = parseFloat(amount);
-        if (!isNaN(depositAmount) && depositAmount > 0) {
-            setBalance(balance + depositAmount);
-            setAmount('');
-            setMessage('');
-        }
-    };
-
-    const handleWithdraw = () => {
-        const withdrawAmount = parseFloat(amount);
-        if (!isNaN(withdrawAmount) && withdrawAmount > 0 && withdrawAmount <= balance) {
-            setBalance(balance - withdrawAmount);
-            setAmount('');
-            setMessage('');
-        }
-    };
-
-    const handleLoan = () => {
-        setMessage('Loan feature is not implemented yet.');
-    };
-
-    const handleInvestment = () => {
-        setMessage('Investment feature is not implemented yet.');
-    };
-
     return (
         <div className="banking-container">
-            <h1>Banking Simulation</h1>
-            <h2>Balance: ${balance.toFixed(2)}</h2>
-            <input
-                type="number"
-                value={amount}
-                onChange={(e) => setAmount(e.target.value)}
-                placeholder="Enter amount"
-                className="amount-input"
-            />
-            <div className="button-container">
-                <button onClick={handleDeposit} className="button deposit">Deposit</button>
-                <button onClick={handleWithdraw} className="button withdraw">Withdraw</button>
+            <div className="gradient-box" />
+            <img className="image-placeholder" src="https://via.placeholder.com/427x430" alt="Placeholder 1" />
+            <img className="image-placeholder" src="https://via.placeholder.com/396x411" alt="Placeholder 2" />
+            <img className="image-placeholder" src="https://via.placeholder.com/413x420" alt="Placeholder 3" />
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+            <div className="title-container">
+                <span className="title">BANKING</span>
+                <span className="title-separator"><br /></span>
+                <span className="title-unlimited">UNLIMITED</span>
             </div>
-
-            <div className="button-container">
-                <button onClick={handleLoan} className="button loan">Loan</button>
-                <button onClick={handleInvestment} className="button investment">Invest</button>
+            <div className="subtitle">Banking Without Barriers.</div>
+            <div className="overview">OVERVIEW</div>
+            <div className="overview-details">
+                <span className="overview-item">Checking Accounts </span>
+                <span className="overview-description">are for daily transactions<br /><br /></span>
+                <span className="overview-item">Savings Accounts</span>
+                <span className="overview-description"> help grow your funds with interest<br /><br /></span>
+                <span className="overview-item">Loans</span>
+                <span className="overview-description"> are for major purchases like homes or cars<br /><br />A </span>
+                <span className="overview-item">debit/credit card</span>
+                <span className="overview-description"> is used for daily purchases, directly or indirectly using your capital, depending on the type<br /><br /></span>
+                <span className="overview-item">Investments</span>
+                <span className="overview-description"> are an allocation of capital into an asset or project with the goal of generating income or increasing value over time.</span>
             </div>
-
-            {message && <p className="message">{message}</p>}
+            <div className="how-it-helps">HOW IT HELPS</div>
+            <div className="our-vision">OUR VISION</div>
+            <div className="banking-basics">BANKING BASICS</div>
+            <div className="call-to-action">START BANKING SMARTER TODAY</div>
+            <div className="are-you-ready">ARE YOU READY?</div>
+            <div className="read-testimonials">Read What Others Have To Say</div>
+            <div className="testimonials">TESTOMONIALS</div>
+            <div className="banking-basics-footer">BANKING BASICS</div>
+            <div className="button-container">
+                <div className="button">Online Banking</div>
+                <div className="button">CREATE AN ACCOUNT</div>
+            </div>
+            <div className="new-to-banking">NEW TO BANKING?</div>
+            <div className="button-container">
+                <div className="button">Loans</div>
+                <div className="button">Investments</div>
+            </div>
+            <div className="banking-basics-footer">BANKING BASICS</div>
+            <div className="introducing">
+                <span className="introducing-text">Introducing </span>
+                <span className="introducing-title">Banking Basics</span>
+            </div>
+            <div className="navbar">
+                <div className="navbar-item">BANKING UNLIMITED</div>
+                <div className="navbar-item">Home</div>
+                <div className="navbar-item">Services</div>
+                <div className="navbar-item">Contact Us</div>
+                <div className="navbar-item">About</div>
+                <div className="navbar-item">Checking</div>
+                <div className="navbar-item">XXX-XXX-XXX</div>
+                <div className="navbar-item">Mission</div>
+                <div className="navbar-item">Savings</div>
+                <div className="navbar-item">Loans</div>
+                <div className="navbar-item">Investments</div>
+            </div>
+            <div className="testimonial">
+                <div className="testimonial-name">Linda R.</div>
+                <div className="testimonial-text">Thanks to Banking Unlimited’s ‘Banking Basics’ Modules, I improved my financial literacy...</div>
+            </div>
+            <div className="testimonial">
+                <div className="testimonial-name">David B.</div>
+                <div className="testimonial-text">I never expected a banking simulation to help me visualize so well how my financial decisions would impact my money...</div>
+            </div>
+            <div className="see-more">See More</div>
+            <div className="footer">
+                <div className="footer-text">BANKING UNLIMITED Home Services Contact Us</div>
+                <div className="footer-text">About Checking XXX-XXX-XXX</div>
+                <div className="footer-text">Mission Savings Loans Investments</div>
+            </div>
+            <div className="vision">
+                <span className="vision-text">The freedom of </span>
+                <span className="vision-highlight">financial literacy </span>
+                <span className="vision-text">is right at your fingertips...</span>
+            </div>
+            <div className="vision">
+                <span className="vision-text">Our vision is to create a </span>
+                <span className="vision-highlight">financially inclusive world</span>
+                <span className="vision-text"> where everyone, regardless of their banking history...</span>
+            </div>
+            <img className="image-placeholder" src="https://via.placeholder.com/416x410" alt="Placeholder 4" />
         </div>
     );
 };
 
 export default App;
 
-// import React, { useState, useEffect } from 'react';
 
-// // Define a functional component
-// const App = () => {
 //   // Define state variables
 //   const [accounts, setAccounts] = useState([]);
 //   const [newAccount, setNewAccount] = useState('');
